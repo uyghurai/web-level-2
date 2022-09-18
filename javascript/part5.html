@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 5</title>
+</head>
+
+<body>
+    <script>
+        let a = 3;
+        /*
+        switch (a) {
+            case 3:
+                alert('Too small');
+                break;
+            case 4:
+                alert('Exactly!');
+                break;
+            case 5:
+                alert('Too big');
+                break;
+            default:
+                alert("I don't know such values");
+        }
+        
+        let browser = 'Internet Explorer';
+        switch (browser) {
+            case 'Edge':
+                alert("You've got the Edge!");
+                break;
+
+            case 'Chrome':
+            case 'Firefox':
+            case 'Safari':
+            case 'Opera':
+                alert('Okay we support these browsers too');
+                break;
+
+            default:
+                alert('We hope that this page looks ok!');
+        }
+        */
+        //alert('Teacher said: Hello');
+        //alert('Student says: OK!');
+        //alert('Student A says: Please');
+
+        function showMessage(character, message) {
+            alert(character + " said: " + message);
+        }
+        showMessage('Teacher', 'Hello');
+        showMessage('Student', 'OK!');
+
+
+
+        function checkAge(age) {
+            if (age >= 18) {
+                return true;
+            } else {
+                return false; //confirm('Do you have permission from your parents?');
+            }
+        }
+
+
+        let age = prompt('How old are you?');
+
+        if (checkAge(age)) {
+            alert('Access granted for parents');
+        } else {
+            alert('Access denied for students');
+        }
+
+        /* Homework
+        Write a function min(number1,number2) which returns the least of two numbers a and b.
+        */
+    </script>
+</body>
+
+</html>

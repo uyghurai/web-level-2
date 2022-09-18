@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="datecard"></div>
+    <br>
+    <div id="keyPanel"></div>
+    <script>
+        function displayCurrentTime() {
+            document.getElementById("datecard").innerHTML = new Date();
+        }
+
+        setInterval(displayCurrentTime, 1000);
+        document.addEventListener("keydown", showKeyStroke);
+
+        function showKeyStroke(event) {
+            document.getElementById("keyPanel").innerHTML = "you pressed: " + event.key;
+        }
+    </script>
+</body>
+
+</html>

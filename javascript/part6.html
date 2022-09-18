@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+                                        all numbers are equal or greater than 0
+                                                1,2 => 1
+                                                5, 2 => 2
+                                                1,1 => 1
+                                                */
+        function minimum(num1, num2) {
+            if (num1 > num2) {
+                return num2;
+            } else if (num1 == num2) {
+                return -1;
+            } else {
+                return num1;
+            }
+        }
+        let n1 = 5;
+        let n2 = 5;
+        let smallernumber = minimum(n1, n2);
+        if (smallernumber == -1) {
+            alert("they're equal");
+        } else {
+            alert("Between " + n1 + "and " + n2 + " smaller number is: " + smallernumber);
+        }
+    </script>
+</body>
+
+</html>

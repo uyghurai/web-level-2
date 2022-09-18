@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascrip-part1</title>
+</head>
+
+<body>
+    <h2>My First JavaScript Code</h2>
+    <div id="datePlaceholder">
+    </div>
+    <div>
+        <p id="paragraph1">The font size will be changed by Javascript.</p>
+    </div>
+    <div>
+        <img id="img-to-hide" src="mac-mini.png" alt="">
+    </div>
+    <div>
+        <button onclick="turnItOn()">Turn on the light</button>
+        <img id="myImage" src="bulboff.gif" style="width:100px">
+        <button onclick="turnItOff()">Turn off the light</button>
+    </div>
+    <button onclick="showDate()">SHow me the Date</button>
+    <button onclick="showMessage()">Show Message</button>
+    <button onclick="changeStyle()">Change Style</button>
+    <button onclick="hideSomething()">Let's hide something</button>
+    <script>
+        function showDate() {
+            document.getElementById("datePlaceholder").innerHTML = Date();
+
+        }
+
+        function showMessage() {
+            alert("You've clicked the button");
+        }
+
+        function changeStyle() {
+            document.getElementById('paragraph1').style.fontSize = '35px';
+        }
+
+        function hideSomething() {
+            document.getElementById('img-to-hide').style.display = 'none';
+        }
+
+        function turnItOn() {
+            document.getElementById('myImage').src = 'bulbon.gif';
+        }
+
+        function turnItOff() {
+            document.getElementById('myImage').src = 'bulboff.gif';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+.header_link a {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.smallicons .col a {
+    text-align: center;
+    display: block;
+}
+
+.smallicons .col a img {
+    margin-bottom: 10px;
+}
+
+.footer-bg {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,47 @@
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+    color: black;
+}
+.header a{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.row{
+    margin-bottom: 10px;
+}
+.container{
+    width: 100%;
+}
+.center-cols{
+    text-align: center;
+}
+.footer{
+    background-color:#f2f2f2;
+    height: 80px;;
+}
+.carousel-control-next-icon{
+    background-color: darkblue;
+}
+.carousel-control-prev-icon{
+    background-color: darkblue;
+}
+.icon-link-text{
+    width: 120px;
+    text-align: center;
+}
+.icon-container{
+    text-align: center;
+}
+.col-2 a{
+    text-align: center;
+}
+.icon-row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Part 2</title>
+</head>
+
+<body>
+    <h1>My First Web Page</h1>
+    <p>My First Paragraph</p>
+
+    <p id="demo">this is the paragraph</p>
+    <br>
+    <script>
+        //document.getElementById("demo").innerHTML = 5 + 6;
+        //document.write(5 + 5);
+        //document.write("<br >");
+        //window.alert(7 * 5);
+        //console.log('Message for console');
+        let num1 = 70;
+        let num2 = 60;
+        // alert(num1 + num2);
+        document.writeln(num1 * num2);
+        document.write("<br>");
+        document.writeln(num1 + num2);
+        document.write("<br>");
+        document.writeln(num1 / num2);
+        document.write("<br>");
+        document.writeln(num1 - num2);
+        document.write("<br>");
+
+        var text1 = "hello";
+        var space = " ";
+        var text2 = "my freinds!";
+        document.write(text1 + space + text2);
+        document.write("<br>");
+
+        const PI = 3.141592653589793;
+        // you can't change this in other place
+        let result = PI * 2;
+
+        //PI = PI * 2; // this is wrong and you'll get exception error
+        document.write(result);
+        document.write("<br>");
+        result = result * 2;
+        document.write(result);
+
+        if (num1 > 60) {
+            alert('Congrats! You passed!');
+        } else {
+            alert("Please try again!");
+        }
+    </script>
+</body>
+
+</html>

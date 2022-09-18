@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation1</title>
+    <style>
+        .mybox {
+            width: 50px;
+            height: 50px;
+            /*background: rgb(63, 104, 216);*/
+            background-image: url(img/Runningdino.gif);
+            background-size: 50px 50px;
+            position: relative;
+            animation: move-down-up 4s infinite;
+        }
+        
+        @keyframes move-down-up {
+            0% {
+                top: 0px;
+            }
+            50% {
+                top: 500px;
+            }
+            100% {
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mybox"></div>
+</body>
+
+</html>
